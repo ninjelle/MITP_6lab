@@ -21,6 +21,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="FastAPI_hello.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FastAPI_parameter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="File_loader.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="NameGreet.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
