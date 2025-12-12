@@ -17,3 +17,7 @@ def get_book(category: str, book_id: int):
         "book_id": book_id,
         "title": f"Book {book_id} in {category}"
     }
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)
