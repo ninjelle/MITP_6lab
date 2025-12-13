@@ -22,6 +22,8 @@ def test_create_item():
     assert data["item"]["name"] == "Test Item"
 
 def test_list_items():
+    expected_value = 200
     response = client.get("/items/")
-    assert response.status_code == 200
+    actual_value = response.status_code
+    assert actual_value == expected_value
     assert "items" in response.json()
